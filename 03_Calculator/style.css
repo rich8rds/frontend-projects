@@ -1,0 +1,115 @@
+body{
+    background:linear-gradient(90deg,  rgb(72, 159, 170),  rgb(230, 242, 243),  rgb(28, 128, 141));
+    margin: 0 auto;
+    padding: 0;
+}
+#container{
+    align-content: center;
+    justify-content: center;
+    display:flex;
+    position: relative;
+    font-family: Consolas;
+    font-weight: bold;
+    font-style: italic;
+}
+#calculator{
+    width: 330px;
+    height: 550px;
+    background-color: #e4f1f1;
+    margin: 50px auto;
+    border-radius: 20px;
+    border: 2px solid rgb(111, 133, 111);
+    box-shadow: green;
+    animation: animate 2s linear ;
+}
+#result{
+    padding-top: 10px;
+    height: 120px;
+    text-align: right;
+    padding-right: 12px;
+}
+#history{
+    font-size: 20px;
+    font-weight: bold;
+    color: grey;
+    opacity: 0.6;
+}
+#output{
+    font-size: 30px;
+    font-weight: bold;
+}
+#input{
+    padding: 10px;
+}
+.number, .operator, .empty{
+    float:left;
+    margin:10px 10px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border-width: 0em;
+    font-family: Consolas;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 18px;
+}
+.number, .operator{
+    cursor:pointer;
+}
+.number:active , .operator:active{
+    font-size: 10px;
+}
+.number:focus, .operator:focus{
+    outline: 0;
+}
+.empty{
+    opacity: 0.3;
+}
+
+.operator:nth-child(1){
+    background-color: rgb(148, 70, 221);
+}
+.operator:nth-child(2){
+    background-color: rgb(247, 94, 94);
+}
+.operator:nth-child(3){
+    background-color: rgb(252, 204, 116);
+}
+.operator:nth-child(4){
+    background-color: rgb(252, 252, 79);
+}
+.operator:nth-child(8){
+    background-color: #93a6f1;
+}
+.operator:nth-child(12){
+    background-color: rgb(71, 184, 71);
+}
+.operator:nth-child(16){
+    background-color: rgb(240, 61, 61);
+}
+.operator:nth-child(20){
+    background-color: rgb(252, 204, 116);
+}
+.number:nth-child(7){
+    background-color: rgb(49, 145, 100);
+}
+.number:nth-child(10){
+    background-color: #4d5fa8;
+}
+.number:nth-child(13){
+    background-color: rgb(142, 185, 84);
+}
+@keyframes animate{
+    0%{
+        transform:   perspective(1000px)  rotateX(0deg);
+    }
+    25%{
+        transform:   perspective(1000px)  rotateY(90deg);
+    }
+    75%{
+        transform:   perspective(1000px)  rotateY(0deg);
+    }
+        100%{
+        transform: perspective(1000px) rotateX(359deg);
+    }
+}

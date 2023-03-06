@@ -1,0 +1,86 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;  
+}
+header{
+    line-height: 5em;
+    background:white;
+    text-align: center;
+}
+body{
+    background-color: #25272E;
+    font-family: sans-serif;
+    font-style: italic;
+    width: 800px;
+    margin: 0 auto;
+}
+.scoreBoard{
+    position: relative;
+    margin: 20px auto;
+    color: white;
+    font-size: 40px;
+    border: 3px solid white;
+    border-radius: 24px;
+    text-align: center;
+    width: 200px;
+    padding: 15px 20px;
+}
+.badge{
+    background-color: rgb(241, 74, 74);
+    font-size: 14px;
+    padding: 2px 10px;
+}
+#user{
+    position: absolute;
+    left: -25px;
+    top:30px;
+}
+#comp{
+    position: absolute;
+    right: -25px;  
+    top: 30px; 
+}
+.result{
+    font-size: 24px;
+}
+.result > p{
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+.choices{
+    margin-top: 50px 0;
+    text-align: center;
+}
+.choice{
+    border: 2px solid whitesmoke;
+    width: 100px;
+    padding: 20px;
+    display:column;
+    margin: 20px;
+    border-radius: 50%;
+    transition: 0.3s all ease;
+}
+.choice:hover{
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+}
+#action-message{
+    text-align: center;
+    color: white;
+    margin-top: .5em;
+}
+.green-glow{
+    border: 4px solid #4dcc7d;
+    box-shadow: 0 0 10px  #32d43a;
+ 
+}
+.red-glow{
+    border: 4px solid#fc121b;
+    box-shadow: 0 0 10px  #d01115;
+}
+.gray-glow{
+    border: 4px solid#464647;
+    box-shadow: 0 0 10px  #25292b;
+}

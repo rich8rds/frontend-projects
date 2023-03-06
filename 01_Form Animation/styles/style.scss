@@ -1,0 +1,73 @@
+*, *::before, *::after {
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    background-color: #58ee96;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    transition: background 0.5s ease;
+    form {
+        svg {
+            width: 4%;
+            margin: 10px;
+        }
+        & .field {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: white;
+            width: 500px;
+            height: 50px;
+            border-radius: 8px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: all 0.5s ease;
+        }
+
+        & .inactive {
+            opacity: 0;
+            transform: translate(-50%, 50%);
+            pointer-events: none;
+        }
+        & .active {
+            opacity: 1;
+            transform: translate(-50%, -50%);
+            pointer-events: all;
+        }
+
+        & .myInput {
+            flex: 1;
+            height: 100%; 
+            outline: none;
+            border: none;
+            background: none;
+        }
+        
+        & .fa-arrow-down {
+            cursor: pointer;
+        }
+
+        // & .field:hover {
+        //     animation: toggle-shake 2s ease;
+        // }
+    }
+}
+
+@keyframes toggle-shake {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    50% {
+        transform: translate(-50%, -50%) rotate(10deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+}

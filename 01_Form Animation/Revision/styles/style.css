@@ -1,0 +1,95 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Lato, Poppins, sans-serif, HighTowerText, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+  background-color: ghostwhite;
+  margin: 5% auto;
+}
+
+body .container {
+  width: 400px;
+  background-color: #eef2f3;
+  border-radius: 10px;
+  -webkit-box-shadow: #1594c7 10px 0px 10px 0px;
+          box-shadow: #1594c7 10px 0px 10px 0px;
+  margin: auto;
+}
+
+body .container .myForm {
+  padding: 20px;
+}
+
+body .container .myForm .myInputDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 50px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+body .container .myForm .myInputDiv .myInput {
+  outline: none;
+  border: none;
+  height: 100%;
+  padding-top: 39px;
+  padding-bottom: 10px;
+  background: none;
+}
+
+body .container .myForm .myInputDiv .userLabel {
+  height: 100%;
+  width: 100%;
+  color: #1594c7;
+  pointer-events: none;
+  position: absolute;
+  border-bottom: 1px solid #502d72;
+}
+
+body .container .myForm .myInputDiv .userLabel::after {
+  content: "";
+  pointer-events: none;
+  -webkit-transition: -webkit-transform 0.4s ease;
+  transition: -webkit-transform 0.4s ease;
+  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+  position: absolute;
+  border-bottom: solid 3px #1594c7;
+  width: 100%;
+  bottom: -1px;
+  left: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+body .container .myForm .myInputDiv span {
+  position: absolute;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-transform: translateY(190%);
+          transform: translateY(190%);
+}
+
+body .container .myForm .myInputDiv .myInput:focus + label span, body .container .myForm .myInputDiv .myInput:valid + label span {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+body .container .myForm .myInputDiv .myInput:focus + label::after, body .container .myForm .myInputDiv .myInput:valid + label:after {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock Paper Scissors</title>
+    <link rel = "stylesheet"  href = "style.css">
+</head>
+<body>
+    <header><h1>Rock Paper Scissors</h1></header>
+    <div class  = "scoreBoard">
+        <div class="badge" id="user">User</div>
+        <div class="badge" id="comp">Comp</div>
+        <span id= "userScore">0</span> : <span id= "compScore">0</span>
+    </div>
+    <div class="result">
+        <p>Paper covers rock. You win!</p>
+    </div>
+    <div class="choices">
+        <img class="choice" id = "Rock" src = "images/rock-you.png" alt = " ">
+        <img class="choice" id = "Paper" src="images/paper-you.png" alt=" ">
+        <img class="choice" id = "Scissors" src="images/scissors-cpu.png" alt=" ">
+    </div>
+    <p id = "action-message">Make your move</p>
+    <script src = "rps.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="styleSheets/style.css">
+</head>
+<body>
+    <div class="carousel-container">
+        <div class="carousel-slide">
+            <img src="images/05.jpg"  id="lastClone" alt="">
+            <img src="images/01.jpg" alt="">
+            <img src="images/02.jpg" alt="">
+            <img src="images/03.jpg" alt="">
+            <img src="images/04.jpg" alt="">
+            <img src="images/05.jpg" alt="">
+            <img src="images/01.jpg"  id = "firstClone" alt="">
+        </div>
+
+           <svg  id="prevBtn" class="btn-dark" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+            <path d="M95.8,47.4H12.9l9.9-9.9c1.1-1.1,1.1-2.8,0-3.9c-1.1-1.1-2.8-1.1-3.9,0L2.4,50.1l1.9,1.9c0,0,0,0,0,0l14.6,14.6
+            c0.5,0.5,1.2,0.8,1.9,0.8s1.4-0.3,1.9-0.8c1.1-1.1,1.1-2.8,0-3.9l-9.9-9.9h82.9c1.5,0,2.8-1.2,2.8-2.8
+            C98.5,48.6,97.3,47.4,95.8,47.4z"/>
+        </svg>
+        <svg id="nextBtn" class="btn-dark"version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+            <path d="M5.1,52.9H88L78,62.8c-1.1,1.1-1.1,2.8,0,3.9c1.1,1.1,2.8,1.1,3.9,0l16.6-16.6l-1.9-1.9c0,0,0,0,0,0L81.9,33.6
+        c-0.5-0.5-1.2-0.8-1.9-0.8s-1.4,0.3-1.9,0.8c-1.1,1.1-1.1,2.8,0,3.9l9.9,9.9H5.1c-1.5,0-2.7,1.2-2.7,2.8C2.4,51.7,3.6,52.9,5.1,52.9
+        z"/>
+        </svg>
+    </div>
+    
+    <script src = "app.js"></script>
+</body>
+</html>

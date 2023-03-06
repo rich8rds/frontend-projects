@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document Object Model Version 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+   <header>
+       <h1>Item Lister</h1>
+    <input class = "searchInput" type = "text" placeholder="Search Items">
+</header>
+   <div class="container">
+        <h2>Add Items/h2>
+       <form class="inputBox">
+            <input class = "inputText" type="text" placeholder="add items">
+            <button  id = "btnSubmit" class = "btn btn-dark btn-light" type = "submit">Submit</button>
+       </form>
+            <div class="listOfItems">
+                <h3>Items</h3>
+                <div class="items">
+                <ul class = "itemList">
+                    <li class="list-item">Item 1<button class="btn btnDelete  btn-dark btn-block" id="btnDelete">X</button></li>
+                    <li class="list-item">Item 2<button class="btn btnDelete  btn-dark btn-block" id="btnDelete">X</button></li>
+                    <li class="list-item">Item 3<button class="btn btnDelete  btn-dark btn-block" id="btnDelete">X</button></li>
+                    <li class="list-item">Item 4<button class="btn btnDelete  btn-dark btn-block" id="btnDelete">X</button></li>
+                    <li class="list-item">Item 5<button class="btn  btnDelete btn-dark btn-block" id="btnDelete">X</button></li>
+                </ul>
+            </div>
+            <div class="btnCont">
+                <button class="btn btn-dark btn-block" id="button">Click</button>
+            </div>
+            </div>
+       </div>
+    <script src ="script.js" ></script>
+</main>
+</body>
+</html>

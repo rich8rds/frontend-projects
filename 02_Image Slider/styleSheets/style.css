@@ -1,0 +1,44 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .carousel-container {
+  margin: 3% auto;
+  width: 60%;
+  border: 5px solid #cfcece;
+  overflow: hidden;
+  position: relative;
+}
+
+body .carousel-container .carousel-slide {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .carousel-container .carousel-slide img {
+  width: 100%;
+}
+
+body svg {
+  width: 8%;
+  position: absolute;
+  padding: 3px;
+  top: 48%;
+  z-index: 10;
+  opacity: 0.8;
+}
+
+body #prevBtn {
+  left: 1%;
+}
+
+body #nextBtn {
+  right: 1%;
+}
+/*# sourceMappingURL=style.css.map */

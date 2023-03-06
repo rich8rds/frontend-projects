@@ -1,0 +1,76 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lato, Poppins, sans-serif, HighTowerText, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+body {
+    background-color: ghostwhite;
+    margin: 5% auto;
+    & .container {
+        width: 400px;
+        background-color: #eef2f3;
+        border-radius: 10px;
+        box-shadow:#1594c7 10px 0px 10px 0px;
+        margin: auto;
+        & .myForm {
+            padding: 20px;
+            & .myInputDiv {
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                height: 50px;  
+                width: 100%;
+                position: relative;
+                margin-bottom: 20px;
+                 overflow: hidden;
+    
+                & .myInput {
+                    outline: none;
+                    border: none;
+                    height: 100%;
+                    padding-top: 39px;
+                    padding-bottom: 10px;
+                    background: none;
+                }
+    
+                & .userLabel {
+                    height: 100%;
+                    width: 100%;
+                    color:#1594c7;
+                    pointer-events: none;
+                    position: absolute;
+                    border-bottom: 1px solid #502d72;
+                }
+    
+                & .userLabel::after {
+                    content: "";
+                    pointer-events: none;
+                    transition: transform 0.4s ease;
+                    position: absolute;
+                    border-bottom: solid 3px #1594c7;
+                    width: 100%;
+                    bottom: -1px;
+                    left:0;
+                    transform: translateX(-100%);
+                }
+    
+                span {
+                    position: absolute;
+                    transition: all 0.2s ease;
+                    transform: translateY(190%); 
+                }
+    
+                & .myInput:focus + label span,  & .myInput:valid + label span { 
+                    transform: translateY(0%); 
+                }
+                & .myInput:focus + label::after,  & .myInput:valid + label:after { 
+                    transform: translateX(0%);
+                }
+            }
+        }
+    }
+
+}

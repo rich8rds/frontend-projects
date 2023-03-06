@@ -1,0 +1,37 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+      & .carousel-container{
+            margin: 3% auto;
+            width: 60%;
+            border: 5px solid #cfcece;
+            overflow: hidden;
+            position: relative;
+            & .carousel-slide{
+                position: relative;
+                width: 100%;
+                display: flex;
+            img{
+                width: 100%;
+                }
+            }
+        }
+        svg{
+            width: 8%;
+            position: absolute;
+            padding: 3px;
+            top: 48%;
+            z-index: 10;
+            opacity: 0.8;
+        }
+        & #prevBtn{
+            left: 1%;
+        }
+        & #nextBtn{
+                right: 1%;
+        }
+  }

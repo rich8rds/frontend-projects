@@ -1,0 +1,44 @@
+*, *::before, *::after {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+@mixin linear-gradient($direction, $color-stops...) {
+    background: nth(nth($color-stops, 1), 1);
+    background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+    background: linear-gradient($direction, $color-stops);
+  }
+
+  @mixin positioning($position, $top, $right, $bottom, $left, $degree) {
+    position: $position;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+    transform: rotate($degree);
+  }
+
+
+body {
+    & .container { 
+        display: flex;
+        align-items: center;
+        & .clock {
+            position: relative;
+            margin: 10% auto;
+            & .hand { 
+                @include positioning(absolute, 0, 0, 0, 0, 0deg);
+            }
+        }
+
+        & .clock::after {
+            // content: " ";
+            background-color: #1a0f0f;
+            border-radius: 50%;
+            width: 6px;
+            height: 6px;
+            @include positioning(absolute, 48%, 0, 0, 49%, 0deg);
+        }
+    }
+}
